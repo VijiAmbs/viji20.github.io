@@ -105,7 +105,13 @@ footer .btn{
 footer .li-ic{
 	margin-left: 100px;
 }
+ #process .row .col-md-6{padding: 0px;}
 
+ #process img{
+ 	width: 20%;
+ 	align-items: center;
+ 	margin-left: 10%;
+ }
 
 }
 
@@ -114,7 +120,13 @@ footer .li-ic{
 footer .li-ic{
 	margin-left: 100px;
 }
+#process .row .col-md-6{padding: 0px;}
 
+ #process img{
+ 	width: 20%;
+ 	align-items: center;
+ 	margin-left: 10%;
+ }
 
 }
 
