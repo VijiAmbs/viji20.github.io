@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="navigation">
+		<div class="navbar">
+			<img src="images/logo.jpeg" alt="logo" class="logo">
+			<nav>
+				<ul id="menuList">
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Hire Me!</a></li>
+				</ul>
+			</nav>
+			<img src="images/menu.png" class="menu-icon" onclick="toggle()" id="menu">
+		</div>
+		
+	</header>
+	<section class="heroImg">
+		<div class="content">
+			<p>A problem well stated is<br> a problem half-solved!<br><span>-Charles Kettering</span><br><br>Meet me(Viji)!... a Communications professional turned Design Thinker who has spent over 8 years in solution-based environments that thrive on problem identification and problem solving.</p>
+			<button>Check out my work!</button>
+		</div>
+		<div class="design">
+			<div class="circle"><img src="images/me.jpeg" class="hero"></div>	
+		</div>
+		
+	</section>
+	<section class="myWork">
+		<h1>My Work</h1>
+		<div class="workGrid">
+			<div class="item1">
+				<img src="images/travel_safe.png">
+				<h4>Travel Safe</h4>
+				<p>A new age travel app for the post-pandemic traveller.</p>
+				<button><a href="works.html">More</a></button>
+			</div>
+			<div class="item2">
+				<img src="images/furever.png">
+				<h4>Furever Home</h4>
+				<p>Tinder of pets. A pro-adoption app for pets and pet lovers.</p>
+				<button><a href="works.html">More</a></button>
+			</div>
+			<div class="item3">
+				<img src="images/toronto.png">
+				<h4>Toronto Environment Alliance</h4>
+				<p>A responsive website donations and more.</p>
+				<button><a href="works.html">More</a></button>
+			</div>
+		</div>
+	</section>
+	<section class="mySkills">
+		<h1>My UX Skills</h1>
+		<div class="flexContainer">
+			<div class="flex">
+				<img src="images/recruitment.png">
+				<h3>User Research</h3>
+				<p></p>
+			</div>
+			<div class="flex">
+				<img src="images/storyboard.png">
+				<h3>Storyboard</h3>
+				<p></p>
+			</div>
+			<div class="flex">
+				<img src="images/wireframe.png">
+				<h3>Wireframe</h3>
+				<p></p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<h1>Connect with me</h1>
+		<ul class="footer">
+			<li><i class="fa fa-linkedin-square" style="font-size:48px;color:blue"></i></li>
+			<li><button>Contact me</button></li>
+		</ul>
+	</footer>
+
+	<script>
+
+		$(document).ready(function(){
+			$('.content').show().animate({
+				opacity : '1'
+			},3000);
+		});
+
+		var menuList = document.getElementById('menuList');
+		menuList.style.maxHeight= "0px";
+		function toggle(){
+			if (menuList.style.maxHeight == "0px") {
+				menuList.style.maxHeight = "130px";
+			}
+			else{
+				menuList.style.maxHeight = "0px";
+			}
+		}
+
+	</script>
+</body>
+</html>

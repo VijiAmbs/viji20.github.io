@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+*{
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation{
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.navbar{
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.logo{
+	width: 50px;
+	cursor: pointer;
+	margin:30px 0 ;
+}
+
+nav {
+	flex: 1;
+	text-align: right;
+}
+
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.menu-icon{
+	width: 30px;
+	display: none;
+	cursor: pointer;
+}
+
+button a{
+	color: #FFF;
+	text-underline-position: none;
+}
+
+a{
+	color: #000;
+}
+
+
+
+/*   Hero Section   */
+
+
+.heroImg{
+	padding: 15px;
+	justify-content: space-between;
+	background-color: #373738;
+	display: flex;
+}
+
+.content{
+	flex-basis: 40%;
+	position: relative;
+	padding-left: 70px;
+	padding-top: 20px;
+	color: #FFF;
+	text-align: center;
+	font-size: 22px;
+	opacity: 0;
+}
+
+.content span{
+	padding-left: 250px;
+	font-size: 15px;
+}
+
+.content button{
+	width: 200px;
+	height: 50px;
+	font-size: 17px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.design{
+	position: relative;
+	flex-basis: 60%;
+	display: flex;
+	align-items: center;
+}
+
+.design .hero{
+	width: 90%;
+	padding-left: 15px;
+	padding-top: 20px;
+}
+
+
+.circle {
+  	width: 340px;
+  	height: 350px;
+  	position: relative;
+  	background: #FFF;
+  	border-radius: 50%;
+  	z-index: 1;
+  	right: 0;
+  	top: 0;
+  	left: 100px;
+}
+
+
+
+/*   My Work Section   */
+
+
+
+.myWork{
+	padding: 10px;
+}
+
+
+.workGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 2 auto;
+	grid-template-areas: 
+	"item1 item2 item3";
+	padding: 20px;
+	text-align: center;
+}
+
+.item1{
+	grid-area: item1;
+	line-height: 35px;
+}
+
+.item2{
+	grid-area: item2;
+	line-height: 35px;
+}
+
+.item3{
+	grid-area: item3;
+	line-height: 35px;
+}
+
+.item3 img{
+	height: 66%;
+}
+
+.item3 button{
+	margin-top: 15px;
+}
+
+.myWork img{
+	width: 60%;
+	border-style: solid;
+}
+
+.myWork h1{
+	text-align: center;
+}
+
+.myWork h3{
+	text-align: center;
+}
+
+.workGrid button{
+	background-color: black;
+	color: #FFF;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+
+/*   My Skills Section   */
+
+
+
+.mySkills{
+	padding: 30px;
+	margin-left: 0px;
+	border: 2px solid black;
+}
+
+.mySkills h1{
+	text-align: center;
+}
+
+.flexContainer{
+	display: flex;
+}
+
+.flex{
+	padding: 20px;
+	padding-left: 15%;
+}
+
+.flexContainer img{
+	width: 100px;
+}
+
+
+/*  Footer Section  */
+
+
+footer{
+	background-color: #373738;
+	padding: 30px;
+}
+
+footer ul{
+	display: flex;
+	vertical-align: top;
+}
+
+.footer{
+	margin-left: 35%;
+	list-style: none;
+}
+
+footer h1{
+	color: #FFF;
+	text-align: center;	
+}
+
+
+.footer i{
+	padding: 10px;
+}
+
+.footer button{
+	margin-top: 10px;
+	margin-left: 250px;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+header{
+	margin-bottom: 80px;
+}
+
+nav ul{
+	width: 100%;
+	position: absolute;
+	top: 75px;
+	right: 0;
+	z-index: 2;
+}
+
+nav ul li{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.menu-icon{
+	display: block;
+}
+
+#menuList{
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.heroImg{
+	padding: 15px;
+	background-color: #1B1B1B;
+	display: block;
+
+}
+
+.content{
+	padding: 40px;
+	color: #FFF;
+	text-align: center;
+	font-size: 17px;
+}
+
+.content span{
+	padding-left: 150px;
+	font-size: 15px;
+}
+
+.design{
+	position: relative;
+}
+
+
+.hero{
+	width: 250px;
+	height: 300px;
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+.circle {
+  	width: 300px;
+  	height: 350px;
+  	margin-right: 5px;
+  	margin-left: 5px;
+	margin-top: 40px;
+	left: 10%;
+}
+
+.myWork{
+	padding: 0px;
+	width: auto;
+}
+
+.workGrid{
+	display: block;
+	text-align: center;
+}
+
+.item1{
+	width: auto;
+	padding-left: 0px;
+}
+
+
+.mySkills{
+	margin-left: 0px;
+	border: 2px solid black;
+}
+
+section .mySkills{
+	width: auto;
+}
+
+.mySkills h1{
+	text-align: center;
+}
+
+.flexContainer{
+	display: block;
+}
+
+.flex{
+	padding-left: 25%;
+}
+
+
+footer{
+	width: auto;
+	background-color: #373738;
+	padding: 0px;
+}
+
+footer ul{
+	display:flex;
+}
+
+
+
+.footer i{
+	padding: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.footer button{
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+.hero{
+	width: 200px;
+	height: 210px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.circle {
+  	width: 225px;
+  	height: 250px;
+  	margin-right: 10px;
+  	margin-left: 0px;
+	margin-top: 40px;
+  	left: 20%;
+}
+
+}
+
+@media only screen and (max-width: 300px) {
+
+
+.circle {
+  	left: 10%;
+}
+
+}
