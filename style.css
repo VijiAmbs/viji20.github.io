@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
 
-*{
+h1, h2, h3, h4, h5, h6{
 	font-family: 'Noto Sans JP', sans-serif;
 	margin: 0;
 	padding: 0;
 }
+p{font-family: helvetica;}
 
 .navigation{
 	width: 100%;
@@ -21,7 +22,7 @@
 .logo{
 	width: 120px;
 	cursor: pointer;
-	margin:30px 0 ;
+	margin:5px 0 ;
 }
 
 nav {
@@ -59,7 +60,7 @@ a{
 .heroImg{
 	padding: 15px;
 	justify-content: space-between;
-	background-color: #373738;
+	background-color: #000000;
 	display: flex;
 }
 
@@ -186,7 +187,7 @@ a{
 .mySkills{
 	padding: 30px;
 	margin-left: 0px;
-	border: 2px solid black;
+	border: 0px solid black;
 }
 
 .mySkills h1{
@@ -211,7 +212,7 @@ a{
 
 
 footer{
-	background-color: #373738;
+	background-color: #000000;
 	padding: 30px;
 }
 
@@ -274,7 +275,7 @@ nav ul li{
 
 .heroImg{
 	padding: 15px;
-	background-color: #1B1B1B;
+	background-color: #000000;
 	display: block;
 
 }
@@ -330,7 +331,7 @@ nav ul li{
 
 .mySkills{
 	margin-left: 0px;
-	border: 2px solid black;
+	border: 0px solid black;
 }
 
 section .mySkills{
@@ -352,7 +353,7 @@ section .mySkills{
 
 footer{
 	width: auto;
-	background-color: #373738;
+	background-color: #000000;
 	padding: 0px;
 }
 
